@@ -4,20 +4,23 @@ import { Container } from "../../components";
 import Divider from "../../components/Divider";
 import InfoSectionMainBlock from "./InfoSectionMainBlock";
 
-
 const ContainerStyled = styled(Container)`
   background: #e6e3c4;
-  background-position: center;
-  height: auto;
-  padding: 80px 24px 80px 24px;
-  `;
+  padding-top: 80px;
+`;
+
+const Wrapper = styled(Container)`
+  padding: 80px 0;
+`;
 
 export default function InfoSection() {
   return (
     <ContainerStyled>
-      <Divider />
-      <InfoSectionMainBlock />
-      <Divider />
+      <Wrapper>
+        <Divider />
+        <InfoSectionMainBlock />
+        <Divider />
+      </Wrapper>
     </ContainerStyled>
   );
 }
