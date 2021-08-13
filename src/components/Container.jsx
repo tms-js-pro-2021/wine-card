@@ -7,6 +7,7 @@ const Wrapper = styled(Row)`
 `;
 
 const InnerContainer = styled(Row)`
+  display: flex;
   max-width: 1110px;
   padding: 0 24px 0 24px;
   align-items: center;
