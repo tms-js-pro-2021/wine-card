@@ -7,17 +7,23 @@ import InfoSectionMainBlock from "./InfoSectionMainBlock";
 
 const ContainerStyled = styled(Container)`
   background: #e6e3c4;
-  background-position: center;
-  height: auto;
-  padding: 80px 24px 80px 24px;
-  `;
+  padding: 80px 0 80px 0;
+`;
+
+const Wrapper = styled(Container)`
+  padding-right: 24px;
+  padding-left: 24px;
+  width: 100%;
+`;
 
 export default function InfoSection() {
   return (
     <ContainerStyled>
-      <Divider />
-      <InfoSectionMainBlock />
-      <Divider />
+      <Wrapper>
+        <Divider />
+        <InfoSectionMainBlock />
+        <Divider />
+      </Wrapper>
     </ContainerStyled>
   );
 }

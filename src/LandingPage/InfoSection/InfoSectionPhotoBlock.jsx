@@ -1,21 +1,40 @@
 import React from "react";
-import { Row } from "../../components";
 import styled from "styled-components";
 
-const SectionContainer = styled(Row)`
+const PhotoContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 125px;
-  justify-items: center;
-  margin-top: 140px;
-  margin-bottom: 140px;
+  grid-template-rows: 2fr 1fr;
+  grid-gap: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 `;
 
-export default function InfoSectionMainBlock() {
+const PhotoSmallContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+`;
+
+export default function InfoSectionPhotoBlock() {
   return (
-    <SectionContainer>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nulla nisi magni aliquam, numquam libero ducimus aliquid in sint velit, recusandae provident distinctio laboriosam doloribus veritatis odio vitae quos iusto?</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis fuga esse molestias impedit reprehenderit fugit necessitatibus veniam, quibusdam sapiente quis inventore provident dicta doloremque, in vitae saepe dolor, quas magnam.</div>
-          </SectionContainer>
+    <PhotoContainer>
+      <img
+        src="./images/vine.png"
+        style={{ maxHeight: "500px", width: "100%", objectFit: "cover" }}
+        alt=""
+      />
+      <PhotoSmallContainer>
+        <img
+          src="./images/bottle1.png"
+          style={{ maxHeight: "228px", width: "100%", objectFit: "cover" }}
+          alt=""
+        />
+        <img
+          src="./images/bottle2.png"
+          style={{ maxHeight: "228px", width: "100%", objectFit: "cover" }}
+          alt=""
+        />
+      </PhotoSmallContainer>
+    </PhotoContainer>
   );
 }
