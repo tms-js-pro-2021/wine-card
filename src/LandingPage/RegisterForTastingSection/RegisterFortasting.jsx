@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/jsx-no-undef */
-import React, { useEffect, useState } from "react";
+
+import React from "react";
 import styled from "styled-components";
 import { Container } from "../../components";
 
@@ -112,13 +111,11 @@ const BorderBoxButton = styled.div`
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height */
 
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-  /* white */
 
   color: #FFFFFF;
   padding: 15px;
@@ -127,9 +124,6 @@ const BorderBoxButton = styled.div`
   margin-top: 10px;
 `;
 
-
-
- 
 
 export default function RegisterForTastingSection() {
   return (
@@ -157,10 +151,7 @@ export default function RegisterForTastingSection() {
           </InputRow>
           <BorderBoxButton>записаться</BorderBoxButton>
         </BorderBoxContent>
-
-      
       </BorderBox>
-      
     </ContainerStyled>
   );
 }
